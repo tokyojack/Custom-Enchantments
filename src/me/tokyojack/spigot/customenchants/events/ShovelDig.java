@@ -16,10 +16,6 @@ import me.tokyojack.spigot.customenchants.utils.RomanNumeral;
 
 public class ShovelDig implements Listener {
 
-	public ShovelDig(Core core) {
-		// TODO Auto-generated constructor stub
-	}
-
 	@EventHandler(ignoreCancelled = true)
 	public void onShovelDig(BlockBreakEvent event) {
 		Player player = event.getPlayer();

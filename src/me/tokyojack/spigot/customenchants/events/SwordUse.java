@@ -20,10 +20,6 @@ import me.tokyojack.spigot.customenchants.utils.ce.TargetType;
 
 public class SwordUse implements Listener {
 
-	public SwordUse(Core core) {
-		// TODO Auto-generated constructor stub
-	}
-
 	@EventHandler(ignoreCancelled = true)
 	public void dmg(EntityDamageByEntityEvent event) {
 		if (!(event.getDamager() instanceof Player && event.getEntity() instanceof LivingEntity))

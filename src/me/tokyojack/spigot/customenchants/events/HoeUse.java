@@ -17,10 +17,6 @@ import me.tokyojack.spigot.customenchants.utils.RomanNumeral;
 
 public class HoeUse implements Listener {
 
-	public HoeUse(Core core) {
-		// TODO Auto-generated constructor stub
-	}
-
 	@EventHandler(ignoreCancelled = true)
 	public void onHoeUse(PlayerInteractEvent event) {
 		if (event.getAction() != Action.RIGHT_CLICK_BLOCK)

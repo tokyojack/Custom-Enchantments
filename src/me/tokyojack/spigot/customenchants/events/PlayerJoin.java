@@ -10,13 +10,7 @@ import me.tokyojack.spigot.customenchants.utils.ItemBuilder;
 
 public class PlayerJoin implements Listener {
 
-	public PlayerJoin(Core core) {
-		// TODO Auto-generated constructor stub
-	}
-
-	//NOTE:
-	//
-	//This is just for me to test the CE	
+	//NOTE: This is just for me to test the CE	
 	
 	@EventHandler
 	public void onPlayerJoin(PlayerJoinEvent event) {
@@ -25,7 +19,6 @@ public class PlayerJoin implements Listener {
 		event.getPlayer().getInventory().addItem(new ItemBuilder(Material.DIAMOND_PICKAXE).addLoreLine("Haste I").toItemStack());
 		event.getPlayer().getInventory().addItem(new ItemBuilder(Material.BOW).addLoreLine("Smite V").toItemStack());
 		event.getPlayer().getInventory().addItem(new ItemBuilder(Material.DIAMOND_HOE).addLoreLine("Explosion I").toItemStack());
-
 	}
 	
 }

@@ -20,10 +20,6 @@ import me.tokyojack.spigot.customenchants.utils.ce.TargetType;
 
 public class LeggingsDamage implements Listener {
 
-	public LeggingsDamage(Core core) {
-		// TODO Auto-generated constructor stub
-	}
-
 	@EventHandler(ignoreCancelled = true)
 	public void onChestplateDamage(EntityDamageByEntityEvent event) {
 

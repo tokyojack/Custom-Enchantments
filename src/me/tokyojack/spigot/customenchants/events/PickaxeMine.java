@@ -16,10 +16,6 @@ import me.tokyojack.spigot.customenchants.utils.RomanNumeral;
 
 public class PickaxeMine implements Listener {
 
-	public PickaxeMine(Core core) {
-		// TODO Auto-generated constructor stub
-	}
-
 	@EventHandler(ignoreCancelled = true)
 	public void onPickaxeMine(BlockBreakEvent event) {
 		Player player = event.getPlayer();

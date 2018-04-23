@@ -35,11 +35,8 @@ import me.tokyojack.spigot.customenchants.events.SwordUse;
 @Getter
 public class Core extends JavaPlugin {
 
+	@Getter
 	private static Core plugin;
-
-	public static Core getPlugin() {
-		return plugin;
-	}
 
 	private Map<String, ArmourEnchant> helmentEnchants = new HashMap<String, ArmourEnchant>();
 	private Map<String, ArmourEnchant> chestplateEnchants = new HashMap<String, ArmourEnchant>();
@@ -60,22 +57,22 @@ public class Core extends JavaPlugin {
 		plugin = this;
 
 		PluginManager pm = getServer().getPluginManager();
-		pm.registerEvents(new PlayerJoin(this), this);
+		pm.registerEvents(new PlayerJoin(), this);
 
-		pm.registerEvents(new HelmentDamage(this), this);
-		pm.registerEvents(new ChestplateDamage(this), this);
-		pm.registerEvents(new LeggingsDamage(this), this);
-		pm.registerEvents(new BootsDamage(this), this);
+		pm.registerEvents(new HelmentDamage(), this);
+		pm.registerEvents(new ChestplateDamage(), this);
+		pm.registerEvents(new LeggingsDamage(), this);
+		pm.registerEvents(new BootsDamage(), this);
 
-		pm.registerEvents(new AxeChop(this), this);
-		pm.registerEvents(new PickaxeMine(this), this);
-		pm.registerEvents(new ShovelDig(this), this);
-		pm.registerEvents(new HoeUse(this), this);
+		pm.registerEvents(new AxeChop(), this);
+		pm.registerEvents(new PickaxeMine(), this);
+		pm.registerEvents(new ShovelDig(), this);
+		pm.registerEvents(new HoeUse(), this);
 
-		pm.registerEvents(new SwordUse(this), this);
-		pm.registerEvents(new AxeWeaponUse(this), this);
+		pm.registerEvents(new SwordUse(), this);
+		pm.registerEvents(new AxeWeaponUse(), this);
 
-		pm.registerEvents(new BowArrowDamage(this), this);
+		pm.registerEvents(new BowArrowDamage(), this);
 
 		Arrays.asList(ArmourEnchants.values()).forEach(enchant -> {
 			if (enchant.getArmourEnchant().getArmourType() == ArmourType.HELMENT)

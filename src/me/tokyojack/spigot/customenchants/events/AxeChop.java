@@ -16,10 +16,6 @@ import me.tokyojack.spigot.customenchants.utils.RomanNumeral;
 
 public class AxeChop implements Listener {
 
-	public AxeChop(Core core) {
-		// TODO Auto-generated constructor stub
-	}
-
 	@EventHandler(ignoreCancelled = true)
 	public void onAxeChop(BlockBreakEvent event) {
 		Player player = event.getPlayer();
